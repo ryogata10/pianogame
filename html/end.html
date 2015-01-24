@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Piano Game | End</title>
+    <link rel=stylesheet href="../css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="how-to-play">
+        <div class="title">
+            <p id="thankyou">How was the game?</p>
+        </div>
+
+        <div class="explanation" id="explaination">
+            <p >It would be a great appreciation if you can fill out the form.</p>
+            <p>Thank you !</p>
+            <br>
+            <p>Your name</p>
+            <p><input type="text" id="name" value="" style="text-align: center;"></p>
+            <br>
+            <p>Rate from the scale of 1 to 5</p>
+            <p><input type="number" id="rate" value="" style="width: 80px; text-align: center;"></p>
+        </div>
+
+
+        <div class="button" id="button">
+            <button class="are-you-ready" id="submit" onclick="submit();">
+                Submit
+            </button>
+        </div>
+    </div>
+
+
+    <img class="logo" src="../picture/mylogo_white.png" alt="logo">
+
+    <script src="../js/piano.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

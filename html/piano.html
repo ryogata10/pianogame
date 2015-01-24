@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Piano Game | Game</title>
+    <link rel=stylesheet href="../css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/snowfall.jquery.js"></script>
+    <script src="../js/piano.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/modal.js"></script>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Game</h1>
+    </div>
+    <div class="menu">
+        <table>
+            <td>
+                <a href="../index.html">Home</a>
+            </td>
+            <td>
+                <a href="piano.html">Game</a>
+            </td>
+            <td>
+                <a href="about.html">About</a>
+            </td>
+        </table>
+    </div>
+
+    <div class="how-to-play">
+
+        <div class="mode">
+            <p>Choose the play mode</p>
+            <a href="game-easy.html">
+                <div class="button" id="easy">
+                    <p>Easy</p>
+                </div>
+            </a>
+            <a href="game-hard.html">
+                <div class="button" id="hard">
+                    <p>Hard</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- ここからモーダルウィンドウ -->
+    <div id="modal-content">
+        <!-- モーダルウィンドウのコンテンツ開始 -->
+        <p>Click the keyboard and make a sound.</p>
+        <p>Play the music according to the music score.</p>
+        <p>You can use the keyboard as well. ( A S D F G H J K )</p>
+        <p><a id="modal-close" class="button-link">Close</a>
+        </p>
+        <!-- モーダルウィンドウのコンテンツ終了 -->
+    </div>
+
+    <div class="open">
+        <p><a id="modal-open" class="button-link">How to Play</a>
+        </p>
+    </div>
+
+    <div class="logo">
+        <img src="../picture/mylogo_white.png" alt="logo">
+    </div>
+
+    <div class="piano" style="visibility:hidden;">
+        <div class="white-key-set">
+            <div class="keyboard" name="C3" onclick="play(this);"></div>
+            <div class="keyboard" name="D3" onclick="play(this);"></div>
+            <div class="keyboard" name="E3" onclick="play(this);"></div>
+            <div class="keyboard" name="F3" onclick="play(this);"></div>
+            <div class="keyboard" name="G3" onclick="play(this);"></div>
+            <div class="keyboard" name="A3" onclick="play(this);"></div>
+            <div class="keyboard" name="B3" onclick="play(this);"></div>
+            <div class="keyboard" name="C4" onclick="play(this);"></div>
+        </div>
+        <div class="black-key-set">
+            <div class="keyboard" name="pC3" onclick="play(this);"></div>
+            <div class="keyboard" name="pD3" onclick="play(this);"></div>
+            <div class="keyboard" name="nameless" style="visibility:hidden;"></div>
+            <div class="keyboard" name="pF3" onclick="play(this);"></div>
+            <div class="keyboard" name="pG3" onclick="play(this);"></div>
+            <div class="keyboard" name="pA3" onclick="play(this);"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

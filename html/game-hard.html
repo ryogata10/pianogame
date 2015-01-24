@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Piano Game | Game</title>
+    <link rel=stylesheet href="../css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <div class="title">
+            <h1>Game</h1>
+        </div>
+        <div class="menu">
+            <table>
+                <td>
+                    <a href="piano.html">Go Back</a>
+                </td>
+            </table>
+        </div>
+    </div>
+
+    <div class="piano">
+        <div class="white-key-set">
+            <div class="keyboard" name="C3" onclick="play(this); game(this);"></div>
+            <div class="keyboard" name="D3" onclick="play(this); game(this);"></div>
+            <div class="keyboard" name="E3" onclick="play(this); game(this);"></div>
+            <div class="keyboard" name="F3" onclick="play(this); game(this);"></div>
+            <div class="keyboard" name="G3" onclick="play(this); game(this);"></div>
+            <div class="keyboard" name="A3" onclick="play(this); game(this);"></div>
+            <div class="keyboard" name="B3" onclick="play(this); game(this);"></div>
+            <div class="keyboard" name="C4" onclick="play(this); game(this);"></div>
+        </div>
+
+        <div class="black-key-set">
+            <div class="keyboard" name="pC3" onclick="play(this); game(this);"></div>
+            <div class="keyboard" name="pD3" onclick="play(this); game(this);"></div>
+            <div class="keyboard" name="nameless" style="visibility:hidden;"></div>
+            <div class="keyboard" name="pF3" onclick="play(this); game(this)"></div>
+            <div class="keyboard" name="pG3" onclick="play(this); game(this)"></div>
+            <div class="keyboard" name="pA3" onclick="play(this); game(this)"></div>
+        </div>
+    </div>
+
+
+    <div class="code">
+        <p class="code-title">Codes of the Song</p>
+        <p>Do　Do　Re　Do　Fa Mi
+            <br>Do　Do　Re　Do　So Fa
+            <br>Do　Do　Do ( high ) Ra Fa Mi Re
+            <br>Ti ( flat ) Ti ( flat ) Ra Fa So Fa
+        </p>
+    </div>
+
+    <img class="logo-piano" src="../picture/mylogo_white.png" alt="logo">
+
+    <script src="../js/piano.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
