@@ -73,16 +73,19 @@ window.onload = function () {
         // Capitalize
         key = key.toUpperCase();
         // Play the sound, when there is a corresponding element
+
+
         if (key_map[key]) {
+            
             play(key_map[key]);
-
+            
+            var pianomode = /piano/g;
             var string = location.href;
-            var loc = /piano/g;
-            if (loc.test(string) === true) {
-
-            } else {
-                game(key_map[key]);
-            }
+            //if (pianomode.test(string) !== true ) {
+            
+            game(key_map[key]);
+            
+            //}
         }
     };
 
